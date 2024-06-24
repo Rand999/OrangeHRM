@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="navegate between all tabs">
+    <parameter name="browser" value=""/>
+    <test verbose="2" preserve-order="true" name="navegate between all tabs">
+        <classes>
+            <class name="Testcases.TC01_Login">
+
+                <methods>
+                    <include name="Login_with_valid_data_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC04_Leave">
+
+                <methods>
+                    <include name="navigate_to_leave_page_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC05_Time">
+
+                <methods>
+                    <include name="navigate_to_time_page_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC06_Recruitment">
+
+                <methods>
+                    <include name="navigate_to_recruitment_page_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC07_My_info">
+
+                <methods>
+                    <include name="navigate_to_myinfo_page_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC08_Performance">
+
+                <methods>
+                    <include name="navigate_to_performance_page_P"/>
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC09_Dasboard">
+
+                <methods>
+                    <include name="navigate_to_dashboard_page_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC11_Maintenance">
+
+                <methods>
+                    <include name="navigate_to_maintenance_page_P"/>
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC13_Claim">
+
+                <methods>
+                    <include name="navigate_to_claim_page_P"/>
+
+                </methods>
+            </class>
+
+            <class name="Testcases.TC14_Buzz">
+
+                <methods>
+                    <include name="navigate_to_buzz_page_P"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

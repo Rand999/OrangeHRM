@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login , add admin and pim ">
+    <parameter name="browser" value=""/>
+
+
+ <!--    <test name="login then add admin">
+          <classes>
+              <class name="Testcases.TC01_Login">
+                  <methods>
+                      <include name="Login_with_valid_data_P"/>
+
+                  </methods>
+              </class>
+              <class name="Testcases.TC02_Admin">
+              <methods>
+                  <include name="add_admin_P"/>
+
+              </methods>
+              </class>
+
+          </classes>
+      </test>-->
+
+     <test name="login then add pim">
+         <classes>
+             <class name="Testcases.TC01_Login">
+                 <methods>
+                     <include name="Login_with_valid_data_P"/>
+
+                 </methods>
+             </class>
+             <class name="Testcases.TC03_PIM">
+                 <methods>
+                     <include name="add_pim_P"/>
+                     <include name="search_by_employee_name_P"/>
+                 </methods>
+             </class>
+
+         </classes>
+     </test>
+
+
+    <test name="login then add admin">
+        <classes>
+            <class name="Testcases.TC01_Login">
+                <methods>
+                    <include name="Login_with_valid_data_P"/>
+
+                </methods>
+            </class>
+            <class name="Testcases.TC02_Admin">
+                <methods>
+                    <include name="add_admin_P"/>
+                    <include name="search_by_username_name_P"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+
+</suite>
